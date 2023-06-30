@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>taskey</title>
+
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('images/backgroundImage.jpg');
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #registrationForm {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #registrationForm input {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    #registrationForm button {
+      padding: 10px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #dashboard {
+      display: none;
+    }
+
+    #taskForm input,
+    #taskForm select,
+    #taskForm textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    #taskForm button {
+      padding: 10px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #taskList li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+     *early access
+<img src="images/taskeylogo.png">
+    
+    <!-- User Registration Form -->
+    <div id="registrationForm">
+      <input type="text" id="emailInput" placeholder="Email">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="registerUser()">Register</button>
+      <button id="loginButton">Login</button>
+    </div>
+
+    <!-- Task Management Dashboard -->
+    <div id="dashboard" style="display: none;">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <select id="projectSelect">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="date" id="deadlineInput">
+        <textarea id="descriptionInput" placeholder="Task description"></textarea>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Progress Bar -->
+    <div id="progressBar" style="display: none;">
+      <div id="progress"></div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script
+
+src="script.js"></script>
+    
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+         

@@ -83,6 +83,7 @@ function displayUserTasks() {
           Deadline: ${task.deadline}<br>
           Description: ${task.description}
           <button onclick="deleteTask('${taskId}')">Task Done</button>
+	  <button >Split Task Ai*</button>
         `;
         taskList.appendChild(taskItem);
       });

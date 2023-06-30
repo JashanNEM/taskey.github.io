@@ -1,126 +1,234 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>taskey</title>
+<html lang="en">
 
-   <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskeyproductive - Online Task Manager</title>
+  <style>
     body {
-      font-family: Arial, sans-serif;
-      background-image: url('images/backgroundImage.jpg');
+      background-image: url('images/vivid-blurred-colorful-background.jpg');
       background-size: cover;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
+    header {
+      text-align: center;
+      padding: 50px 0;
     }
 
     h1 {
-      text-align: center;
-    }
-
-    #registrationForm {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    #registrationForm input {
+      font-size: 48px;
       margin-bottom: 10px;
-      padding: 5px;
-      width: 100%;
+      font-weight: bold;
     }
 
-    #registrationForm button {
-      padding: 10px;
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+      font-weight: bold;
     }
 
-    #dashboard {
-      display: none;
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
-    #taskForm input,
-    #taskForm select,
-    #taskForm textarea {
-      margin-bottom: 10px;
-      padding: 5px;
-      width: 100%;
+    .cta-button {
+     transition: background-color 0.3s;
+     background-image: url('images/button-background-image.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     color: #fff;
+     font-size: 16px;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 170px; /* Adjust the width to your desired size */
+     height: 50px;
+     
+
     }
 
-    #taskForm button {
-      padding: 10px;
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
+    .cta-button:hover {
+      background-color: #000000;
     }
 
-    #taskList li {
-      margin-bottom: 10px;
-      padding: 10px;
-      background-color: #f2f2f2;
-      border-radius: 5px;
+    .features {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  opacity: 0;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.feature-box h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feature-box p {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      padding: 0px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 72px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .feature-box {
+        width: 80%;
+      }
+    }
+   .upcoming-features {
+  margin-top: 50px;
+}
+
+.upcoming-features h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-card {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .cta-button {
+        font-size: 16px;
+      }
+
+      .feature-box {
+        width: 90%;
+        padding: 50px;
+        margin: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
+  <header>
+    <h1 class="logo">
+      <img src="images/taskeylogoS.png" alt="Taskeyproductive Logo" width="50" height="50" />
+    </h1>
+    <h1>Taskeyproductive</h1>
+    <p>A simple and effective online task manager</p>
+  </header>
+
+  <main>
+    <button class="cta-button" onclick="window.location.href = 'tool.html';">Get Started</button>
+
     
-<img src="images/taskeylogo.png">
-    
-    <!-- User Registration Form -->
-    <div id="registrationForm">
-      <input type="text" id="emailInput" placeholder="Email">
-      <input type="password" id="passwordInput" placeholder="Password">
-      <button onclick="registerUser()">Register</button>
-      <button id="loginButton">Login</button>
+
+    <div class="features">
+      <div class="feature-box">
+        <h2>Task Organization</h2>
+        <p>Effortlessly organize your tasks into lists and categories for better management.</p>
+      </div>
+      <div class="feature-box">
+        <h2>Deadline Reminders</h2>
+        <p>Receive timely notifications and reminders to help you stay on top of your deadlines.</p>
+      </div>
+      <div class="feature-box">
+        <h2>Collaboration</h2>
+        <p>Collaborate with team members, assign tasks, and track progress together.</p>
+      </div>
     </div>
 
-    <!-- Task Management Dashboard -->
-    <div id="dashboard" style="display: none;">
-      <form id="taskForm">
-        <input type="text" id="taskInput" placeholder="Enter task">
-        <select id="projectSelect">
-          <option value="personal">Personal</option>
-          <option value="work">Work</option>
-          <option value="other">Other</option>
-        </select>
-        <input type="date" id="deadlineInput">
-        <textarea id="descriptionInput" placeholder="Task description"></textarea>
-        <button type="submit">Add Task</button>
-      </form>
-      <ul id="taskList"></ul>
-    </div>
-
-    <!-- Progress Bar -->
-    <div id="progressBar" style="display: none;">
-      <div id="progress"></div>
-    </div>
+<section class="upcoming-features"> 
+  <h2>Upcoming Exciting Features</h2>
+  <div class="feature-card">
+    <h3>AI Task Splitting</h3>
+    <p>Let our AI-powered task splitting feature automatically break down complex tasks into smaller, more manageable sub-tasks. Stay organized and focused on the details without feeling overwhelmed.</p>
   </div>
+  <div class="feature-card">
+    <h3>AI Task Prioritization</h3>
+    <p>Our AI-based task prioritization feature intelligently analyzes your tasks, their deadlines, and dependencies to help you determine the most important and urgent tasks. Boost your productivity and stay on top of your workload.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Smart Alert</h3>
+    <p>Stay informed and never miss a deadline with our smart alert system. Receive timely notifications and reminders for upcoming tasks, deadlines, and important events. Never let anything slip through the cracks again.</p>
+  </div>
+</section>
 
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-
-  <script
-
-src="script.js"></script>
-    
-
-  
+<br><br><br><br><br>
+  </main>
 </body>
+
 </html>
-
-
-
-
-
-
-
-         
