@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskeyProductive - Online Task Manager | Organize, Collaborate, and Stay Productive</title>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <img src="images/taskeylogo.png" class="logo">
+    <div id="content">
+      <div id="registrationForm">
+        <input type="text" id="emailInput" placeholder="Full Name">
+        Select Designation
+        <select id="designationInput">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+        Select Grade
+        <select id="classInput">
+          <option value="null">I'm a teacher</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           <option value="9">9</option>
+           <option value="10">10</option>
+        </select>
+        Select Section
+        <select id="sectionInput">
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+        </select>
+        <input type="text" id="emailInput" placeholder="Email">
+        <input type="password" id="passwordInput" placeholder="Password">
+        <!-- Add the select element with options -->
+   
+        <button id="registerButton">Register</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+  <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Change flex-direction to column */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 360px;
+  border-radius: 5%; 
+  overflow: hidden;
+  height: 150px;
+  margin-bottom: 20px; /* Add margin to separate logo from the form */
+}
+
+/* Common styles for both login and registration forms */
+#content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%; /* Added width as percentage to make it more responsive */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+
+
+
+#content img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%; /* Added width as percentage to make it more responsive */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Specific styles for login form */
+#loginForm {
+  text-align: center;
+}
+
+/* Specific styles for registration form */
+#registrationForm {
+  text-align: center;
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: fadeIn 1s;
+}
+
+
+#designationInput {
+  width: 100%;
+  padding: 10px;
+  
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  appearance: none; /* Remove default arrow icon in some browsers */
+}
+
+/* Style the dropdown arrow icon in Chrome, Safari, and Opera */
+#designationInput::-webkit-inner-spin-button,
+#designationInput::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Style the dropdown arrow icon in Firefox */
+#designationInput::-moz-focus-inner {
+  border: 0;
+}
+
+/* Style the dropdown arrow icon in Internet Explorer */
+#designationInput::-ms-expand {
+  display: none;
+}
+
+/* Style the dropdown arrow icon in Microsoft Edge */
+#designationInput::-ms-overflow-style {
+  display: none;
+}
+
+/* Add hover and focus styles for the designation selection element */
+#designationInput:hover,
+#designationInput:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+
+#classInput {
+  width: 100%;
+  padding: 10px;
+  
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  appearance: none; /* Remove default arrow icon in some browsers */
+}
+
+/* Style the dropdown arrow icon in Chrome, Safari, and Opera */
+#classInput::-webkit-inner-spin-button,
+#classInput::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Style the dropdown arrow icon in Firefox */
+#classInput::-moz-focus-inner {
+  border: 0;
+}
+
+/* Style the dropdown arrow icon in Internet Explorer */
+#classInput::-ms-expand {
+  display: none;
+}
+
+/* Style the dropdown arrow icon in Microsoft Edge */
+#classInput::-ms-overflow-style {
+  display: none;
+}
+
+/* Add hover and focus styles for the designation selection element */
+#classInput:hover,
+#classInput:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#sectionInput {
+  width: 100%;
+  padding: 10px;
+  
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  appearance: none; /* Remove default arrow icon in some browsers */
+}
+
+/* Style the dropdown arrow icon in Chrome, Safari, and Opera */
+#sectionInput::-webkit-inner-spin-button,
+#sectionInput::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Style the dropdown arrow icon in Firefox */
+#sectionInput::-moz-focus-inner {
+  border: 0;
+}
+
+/* Style the dropdown arrow icon in Internet Explorer */
+#sectionsInput::-ms-expand {
+  display: none;
+}
+
+/* Style the dropdown arrow icon in Microsoft Edge */
+#sectionInput::-ms-overflow-style {
+  display: none;
+}
+
+/* Add hover and focus styles for the designation selection element */
+#sectionInput:hover,
+#sectionInput:focus {
+  border-color: #4caf50;
+  outline: none;
+}
